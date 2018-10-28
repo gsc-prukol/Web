@@ -1,0 +1,9 @@
+.header
+{
+    background-image: image("image/header.png");
+    background-color: rgb(0, 0, 173);
+}
+a
+{
+    text-emphasis: none;
+}

@@ -1,0 +1,230 @@
+gsc_prukol@G500:~$ ls
+Бібліотека Calibre  Завантаження      Музика   IdeaProjects     snap
+Видиво              Загальнодоступні  Шаблони  ParalelTM        TRS_laba1_3var.odt
+Документи           Картинки          Desktop  PycharmProjects
+gsc_prukol@G500:~$ cd
+gsc_prukol@G500:~$ mkdir web
+gsc_prukol@G500:~$ cd web
+gsc_prukol@G500:~/web$ git init
+Ініціялізований порожній репозиторій Git в /home/gsc_prukol/web/.git/
+gsc_prukol@G500:~/web$ cd ../
+gsc_prukol@G500:~$ ls
+Бібліотека Calibre  Завантаження      Музика   IdeaProjects     snap
+Видиво              Загальнодоступні  Шаблони  ParalelTM        TRS_laba1_3var.odt
+Документи           Картинки          Desktop  PycharmProjects  web
+gsc_prukol@G500:~$ cd ../
+gsc_prukol@G500:/home$ ls
+gsc_prukol
+gsc_prukol@G500:/home$ cd ../
+gsc_prukol@G500:/$ ls
+bin    dev   initrd.img      lib64       mnt   root  snap  tmp  vmlinuz
+boot   etc   initrd.img.old  lost+found  opt   run   srv   usr  vmlinuz.old
+cdrom  home  lib             media       proc  sbin  sys   var
+gsc_prukol@G500:/$ cd media
+gsc_prukol@G500:/media$ ls
+gsc_prukol  ntfs
+gsc_prukol@G500:/media$ cd ntfs
+gsc_prukol@G500:/media/ntfs$ ls
+Вовина                        found.000                    Program Files
+Матерівли ПС для КА-63-64-66  games                        qwerty.txt
+Музика                        ka66                         $RECYCLE.BIN
+Навчання                      Merged Volume'Local Volume'  somename.tar.gz
+Новая папка                   Minecraft                    SteamLibrary
+Фільми                        mpython                      System Volume Information
+drivers                       msdownld.tmp                 tablet PC
+foto                          Program
+gsc_prukol@G500:/media/ntfs$ cd Навчання
+gsc_prukol@G500:/media/ntfs/Навчання$ ді
+ді: команду не знайдено
+gsc_prukol@G500:/media/ntfs/Навчання$ ls
+2018-01-19_volodymyr_volodko.pdf  Прога_4       ЧМ               prog_lecture_10.pdf
+54566548458744646548.txt          Психологія    Buks             Untitled-1.c
+Англійська                        Семестр_3     lab15_bases.pdf  Untitled-1.cpp
+БД.png                            Семестр_4     Labu             Volodko
+ГІС_3                             Схемотехніка  LOG_TERMINAL     XIl2UoFNpO8.jpg
+ЕТ_3                              ТІК_3         Microsoft Press
+Матан                             ТЙ            new.c
+ОС_3                              Фізика_3      P1090891.JPG
+gsc_prukol@G500:/media/ntfs/Навчання$ cd Labu
+gsc_prukol@G500:/media/ntfs/Навчання/Labu$ ls
+АСД  БД  ОС  ПОА_лаба3.docx  Прога  ТІК  ЧМ  AAS_PAA  OS&TIK_3  web  web.rar
+gsc_prukol@G500:/media/ntfs/Навчання/Labu$ cd Web
+bash: cd: Web: Немає такого файла або каталогу
+gsc_prukol@G500:/media/ntfs/Навчання/Labu$ ls
+АСД  БД  ОС  ПОА_лаба3.docx  Прога  ТІК  ЧМ  AAS_PAA  OS&TIK_3  web  web.rar
+gsc_prukol@G500:/media/ntfs/Навчання/Labu$ cd web
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ ls
+02018.psd  image  index.html  style  Untitled-1.cpp
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ cp * ~/web
+cp: пропуск каталогу 'image'
+cp: пропуск каталогу 'style'
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ help cp
+bash: help: «cp» не відповідає жодний розділ довідки. Спробуйте `help help' чи `man -k cp' або `info cp'.
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ man cp
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ cp -r * ~/web
+gsc_prukol@G500:/media/ntfs/Навчання/Labu/web$ cd ~/web
+gsc_prukol@G500:~/web$ ls
+02018.psd  image  index.html  style  Untitled-1.cpp
+gsc_prukol@G500:~/web$ git add .
+gsc_prukol@G500:~/web$ git commi -m "Commit 1"
+git: 'commi' не є командою git. Дивіться 'git --help'.
+
+Ви мали на увазі щось з цього ?
+	commit
+	column
+	config
+gsc_prukol@G500:~/web$ git commit -m "Commit 1"
+[master (кореневий комміт) 9aa5fcd] Commit 1
+ 15 files changed, 220 insertions(+)
+ create mode 100755 02018.psd
+ create mode 100755 Untitled-1.cpp
+ create mode 100755 image/02018.png
+ create mode 100755 image/dictator.png
+ create mode 100755 image/header.png
+ create mode 100755 image/header1.png
+ create mode 100755 image/madagaskar.png
+ create mode 100755 image/morboy.png
+ create mode 100755 image/obzla.png
+ create mode 100755 image/stark.png
+ create mode 100755 "image/\320\221\320\265\320\267 \320\275\320\260\320\267\320\262\320\270-6.png"
+ create mode 100755 index.html
+ create mode 100755 style/footer.css
+ create mode 100755 style/header.css
+ create mode 100755 style/main.css
+gsc_prukol@G500:~/web$ code index.hml
+gsc_prukol@G500:~/web$ nano index.hml
+gsc_prukol@G500:~/web$ cado index.html 
+Команду 'cado' не знайдено, можливо, Ви мали на увазі:
+ Команда 'cdo' із пакунку 'cdo' (universe)
+cado: команду не знайдено
+gsc_prukol@G500:~/web$ code index.html 
+gsc_prukol@G500:~/web$ git commit -m "Cimmit 2"
+На гілці master
+Зміни, які не в індексі для комміту:
+	змінено:       index.html
+
+немає змін, доданих у комміт
+gsc_prukol@G500:~/web$ git add *
+gsc_prukol@G500:~/web$ git commit -m "Cimmit 2"
+[master 4336b36] Cimmit 2
+ 1 file changed, 188 insertions(+), 184 deletions(-)
+ rewrite index.html (96%)
+gsc_prukol@G500:~/web$ git merge New
+merge: New - not something we can merge
+gsc_prukol@G500:~/web$ git branc New
+git: 'branc' не є командою git. Дивіться 'git --help'.
+gsc_prukol@G500:~/web$ git branch New
+gsc_prukol@G500:~/web$ git log
+commit 4336b36ebc19593a2bc8ae09f7f90a46c760989b
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:40:01 2018 +0300
+
+    Cimmit 2
+
+commit 9aa5fcdd8243fa35c1142a5a66a1f86d21263fde
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:34:13 2018 +0300
+
+    Commit 1
+gsc_prukol@G500:~/web$ git help
+використання: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Стандартні команди Git, що використовуються у різних ситуаціях:
+
+створити робочу область (дивіться також: git help tutorial)
+   clone      Клонування репозиторію в новий каталог
+   init       Створення порожнього репозиторію Git або реініціялізація існуючого
+
+робота з поточними змінами (дивіться також: git help everyday)
+   add        Додаваня вмісту файлу в індекс
+   mv         Переміщення або перейменування файлу, каталогу або символьного посилання
+   reset      Скидання поточного стану HEAD на вказаний стан
+   rm         Вилучення файлів із робочого каталогу та індексу
+
+перегляд історії та поточного стану (дивіться також: git help revisions)
+   bisect     Використовувати двійковий пошук зміни, яка вносить помилку
+   grep       Вивід рядків, що відповідають шаблону
+   log        Вивід історії коммітів
+   show       Вивід різних типів об’єктів
+   status     Вивід стану робочого каталогу
+
+вирощування, позначення та налаштування Вашої спільної історії
+   branch     Вивід переліку, створення або вилучення гілок
+   checkout   Перемикання гілок або відновлення файлів у робочому каталозі
+   commit     Запис змін у репозиторій
+   diff       Вивід різниці між коммітами, коммітом та робочим каталогом й тощо.
+   merge      Об’єднаня однієї або декількох історій розробки разом
+   rebase     Переміщення локальних коммітів над оновленою гілкою, що вище
+   tag        Створення, вивід переліку, вилучення або перевірка мітки, підписаної за допомогою GPG
+
+сумісна робота (дивіться також: git help workflows)
+   fetch      Завантаження об’єктів і посилань з іншого репозиторію
+   pull       Видобування змін та об’єднання з іншим репозиторієм або локальною гілкою
+   push       Оновлення зовнішніх посилань і пов’язаних об’єктів
+
+«git help -а» і «git help -g» виводить перелік доступних подкоманд та
+деякі керівництва по темам. Запустіть «git help <команда>» або
+«git help <термін>», щоб прочитати про конкретні підкоманду або тему.
+gsc_prukol@G500:~/web$ git checkout New
+Перейшов до гілки 'New'
+gsc_prukol@G500:~/web$ code index.html 
+gsc_prukol@G500:~/web$ git add *
+gsc_prukol@G500:~/web$ git commi -m "Commit new 1"
+git: 'commi' не є командою git. Дивіться 'git --help'.
+
+Ви мали на увазі щось з цього ?
+	commit
+	column
+	config
+gsc_prukol@G500:~/web$ git commit -m "Commit new 1"
+[New 71db6d8] Commit new 1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gsc_prukol@G500:~/web$ git help merge
+gsc_prukol@G500:~/web$ git checkout master
+Перейшов до гілки 'master'
+gsc_prukol@G500:~/web$ git merge New
+Оновлення 4336b36..71db6d8
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gsc_prukol@G500:~/web$ code index.html 
+gsc_prukol@G500:~/web$ git commit -m "Cimmit 3"
+На гілці master
+Зміни, які не в індексі для комміту:
+	змінено:       index.html
+
+немає змін, доданих у комміт
+gsc_prukol@G500:~/web$ git add *
+gsc_prukol@G500:~/web$ git commit -m "Cimmit 3"
+[master 3cac716] Cimmit 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gsc_prukol@G500:~/web$ git log
+commit 3cac716b02c4c942845add17dcccdd25c67dff36
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:49:26 2018 +0300
+
+    Cimmit 3
+
+commit 71db6d82a298d76eebf4dc5cb4a56c9ed012cff6
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:43:32 2018 +0300
+
+    Commit new 1
+
+commit 4336b36ebc19593a2bc8ae09f7f90a46c760989b
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:40:01 2018 +0300
+
+    Cimmit 2
+
+commit 9aa5fcdd8243fa35c1142a5a66a1f86d21263fde
+Author: gsc_prukol <gsc.prukol@gmail.com>
+Date:   Sat Oct 27 16:34:13 2018 +0300
+
+    Commit 1
+gsc_prukol@G500:~/web$ 
+
