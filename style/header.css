@@ -1,9 +1,40 @@
-.header
+.header nav 
 {
-    background-image: image("image/header.png");
-    background-color: rgb(0, 0, 173);
+    color: rgb(97, 97, 97);
+    display: inline;
+    margin-right: 10%;
 }
-a
+
+.header h1
 {
-    text-emphasis: none;
+    color: rgb(97, 97, 97);
+    display: inline;
+}
+
+.header h2
+{
+    font-size: 70%;
+    color: rgb(97, 97, 97);
+    display: inline;
+}
+.header .highest_row
+{
+    background-color: rgb(22, 22, 22);
+}
+.header a
+{
+    color: rgb(97, 97, 97);
+}
+.header .forms
+{
+    background-color: blue;
+}
+.header .forms form
+{
+    display: inline;
+}
+.header figure
+{
+    margin: 0%;
+    inline-size: 90vw;
 }
