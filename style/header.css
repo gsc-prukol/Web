@@ -1,29 +1,31 @@
+body
+{
+    background-color: rgb(200, 200, 200);
+}
+
 .header nav 
 {
-    color: rgb(97, 97, 97);
-    display: inline;
-    margin-right: 10%;
+   display: inline;
 }
 
-.header h1
+.header .highest_row h1
 {
-    color: rgb(97, 97, 97);
     display: inline;
 }
 
-.header h2
+.header .highest_row h2
 {
     font-size: 70%;
-    color: rgb(97, 97, 97);
     display: inline;
 }
 .header .highest_row
 {
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(25, 25, 25);
+    color: rgb(100, 100, 100);
 }
 .header a
 {
-    color: rgb(97, 97, 97);
+    color: rgb(100, 100, 100);
 }
 .header .forms
 {
@@ -33,8 +35,23 @@
 {
     display: inline;
 }
+.header h2
+{
+    color: grey;
+   text-shadow: rgb(230, 230, 230) 1px 0px, rgb(230, 230, 230) 1px 1px,
+   rgb(230, 230, 230) 0px 1px, rgb(230, 230, 230) -1px 1px,
+   rgb(230, 230, 230) -1px 0px, rgb(230, 230, 230) -1px -1px,
+   rgb(230, 230, 230) 0px -1px, rgb(230, 230, 230) 1px -1px;
+}
+.header figure img
+{
+    width: 98vw;
+}
 .header figure
 {
-    margin: 0%;
-    inline-size: 90vw;
+    margin-left: 0em;
+}
+.header figure figcaption
+{
+
 }
