@@ -17,6 +17,7 @@ body
 {
     font-size: 70%;
     display: inline;
+    text-shadow:  rgb(0, 0, 0) 0px 0px;
 }
 .header .highest_row
 {
@@ -53,5 +54,14 @@ body
 }
 .header figure figcaption
 {
-
+    color			: white;
+	font			: bold 24px/45px Helvetica, Sans-Serif;
+	letter-spacing	: -1px;
+	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+	background		: rgba(0, 0, 0, 0.7);
+    padding			: 10px;
+    position    	: absolute;
+	top		        : 200px;
+	right	    	: 100px;
+    padding-left    : 1vw;
 }
