@@ -13,7 +13,9 @@
 {
     display: inline-block;
     position: relative;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline-end: inherit;
 }
 .footer p
 {
@@ -27,6 +29,7 @@
 .footer nav
 {
     position: relative;
+
 }
 
 

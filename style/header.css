@@ -5,10 +5,10 @@ body
 
 .header nav 
 {
-    display: inline-block; /* смещает только блоки */ 
+    display: inline-block; 
     position: absolute;
     right:2%;
-    top: 4%;
+    top: 40%;
 }
 
 .header .highest_row h1
@@ -23,23 +23,17 @@ body
     font-size: 70%;
     display: inline-block;
     padding: 0;
-    text-shadow:  rgb(0, 0, 0) 0px 0px;
 }
-.header .highest_row div
+
+.header .highest_row div 
 {
-    background-color: rgb(25, 25, 25);
-    color: rgb(100, 100, 100);
-   
-}
-/*.header .highest_row div 
-{
-    position: fixed;
     width: 98vw;
     z-index: 80;
-    padding-top: 0;
-    margin-top: 0;
-
-}*/
+    position: fixed ;
+    background-color: rgb(25, 25, 25);
+    color: rgb(100, 100, 100);
+    top: 0;
+}
 .header a
 {
     color: rgb(100, 100, 100);
@@ -47,7 +41,7 @@ body
 .header .forms
 {
     background-color: #104696;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 .header .forms form
 {
