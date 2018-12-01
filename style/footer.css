@@ -1,11 +1,11 @@
 .footer a 
 {
-    text-emphasis-color: rgb(101, 105, 104);
+    color: rgb(251, 251, 251);
     
 }
 .footer 
 {
-    background-color: rgb(98, 106, 216);
+    background-color: rgb(20, 20, 20);
 }
 
 
@@ -13,18 +13,20 @@
 {
     display: inline-block;
     position: relative;
+    margin: 0;
 }
-
+.footer p
+{
+    color: rgb(88, 89, 96);
+}
 
 .footer li
 {
     display:table;
-    
-  
 }
 .footer nav
 {
-position: relative;
+    position: relative;
 }
 
 
