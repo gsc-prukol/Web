@@ -12,10 +12,20 @@
 .footer ul
 {
     display: inline-block;
-
+    position: relative;
 }
 
 
+.footer li
+{
+    display:table;
+    
+  
+}
+.footer nav
+{
+position: relative;
+}
 
 
 
