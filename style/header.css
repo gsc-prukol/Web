@@ -1,36 +1,53 @@
 body
 {
-    background-color: rgb(200, 200, 200);
+    background-color: hsl(0, 0%, 88%);
 }
 
 .header nav 
 {
-   display: inline;
+    display: inline-block; /* смещает только блоки */ 
+    position: absolute;
+    right:2%;
+    top: 4%;
 }
 
 .header .highest_row h1
 {
-    display: inline;
+    display: inline-block;
+    padding: 1px;
+    margin: 1px;
 }
 
 .header .highest_row h2
 {
     font-size: 70%;
-    display: inline;
+    display: inline-block;
+    padding: 0;
     text-shadow:  rgb(0, 0, 0) 0px 0px;
 }
-.header .highest_row
+.header .highest_row div
 {
     background-color: rgb(25, 25, 25);
     color: rgb(100, 100, 100);
+   
 }
+/*.header .highest_row div 
+{
+    position: fixed;
+    width: 98vw;
+    z-index: 80;
+    padding-top: 0;
+    margin-top: 0;
+
+}*/
 .header a
 {
     color: rgb(100, 100, 100);
 }
 .header .forms
 {
-    background-color: blue;
+    background-color: #104696;
+    margin-top: 2em;
 }
 .header .forms form
 {
@@ -38,11 +55,7 @@ body
 }
 .header h2
 {
-    color: grey;
-   text-shadow: rgb(230, 230, 230) 1px 0px, rgb(230, 230, 230) 1px 1px,
-   rgb(230, 230, 230) 0px 1px, rgb(230, 230, 230) -1px 1px,
-   rgb(230, 230, 230) -1px 0px, rgb(230, 230, 230) -1px -1px,
-   rgb(230, 230, 230) 0px -1px, rgb(230, 230, 230) 1px -1px;
+    color: rgb(168, 166, 166);
 }
 .header figure img
 {
