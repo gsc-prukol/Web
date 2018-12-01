@@ -7,8 +7,6 @@
 {
     background-color: rgb(20, 20, 20);
 }
-
-
 .footer ul
 {
     display: inline-block;
@@ -29,7 +27,8 @@
 .footer nav
 {
     position: relative;
-
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 

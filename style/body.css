@@ -2,3 +2,57 @@ body
 {
     background-color: hsl(0, 0%, 88%);
 }
+
+/*.main_part .aside_left 
+{
+    background: #f0f0f0;
+    padding: 10px;
+    float: left;
+   
+}
+
+.main_part article 
+{
+    margin-right: 640px;
+    display: inline-block;
+}
+
+.main_part .aside_right 
+{
+    background: #f0f0f0;
+    padding: 10px;
+    float: right;
+}
+*/
+.content-wrapper > .main_part
+{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)) repeat(auto-fill, minmax(150px, 1fr)) repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "asid_left article1 asid_right "
+    "asid_left article2 asid_right"
+    "asid_left article3 asid_right";
+}
+.content-wrapper .aside_left 
+{
+   grid-area: asid_left;
+}
+.content-wrapper .aside_right 
+{
+    grid-area: asid_right;
+}
+.content-wrapper .article1 
+{
+    grid-area: article1;
+ 
+}
+.content-wrapper .article2 
+{
+    grid-area: article2;
+}
+.content-wrapper .article3 
+{
+    grid-area: article3;
+}
