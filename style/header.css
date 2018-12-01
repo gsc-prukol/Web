@@ -67,3 +67,13 @@
 	right	    	: 100px;
     padding-left    : 1vw;
 }
+.header > .forms .log_in
+{
+    display: inline;
+}
+.header > .forms .search
+{
+    position: absolute;
+    right: 10%;
+    /* top: 4%; */
+}
