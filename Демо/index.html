@@ -1,0 +1,57 @@
+<!--
+Пример создан сайтом http://blogjquery.ru/gamburger-menyu-na-sajte-js-html/
+-->
+
+<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function() {
+$(".gamburger3").click(function() {
+if($(".gamburger3").attr('datas') == 'off') {     /* появление меню */
+$(".gamburger4").attr('style', 'visibility: visible; margin-right: 0px;');
+$(".gamburger3").attr('datas', 'on');
+$(".gamburger3").removeClass("fa-bars");
+$(".gamburger3").addClass("fa-times");
+}
+else {                                         /* исчезновение меню */
+$(".gamburger4").attr('style', 'visibility: hidden; margin-right: -1000px;');
+$(".gamburger3").attr('datas', 'off');
+$(".gamburger3").removeClass("fa-times");
+$(".gamburger3").addClass("fa-bars");
+}
+});
+});
+</script>
+
+
+<!-- гамбургер меню -->
+<div class="gamburger1">
+<div class="gamburger2">
+<i class="fa fa-bars gamburger3" datas="off"></i>
+<div class="gamburger4">
+<ul class="gamburger5">
+<li><a href=""><i class="fa fa-angle-right"></i> О компании</a></li>
+<li><a href=""><i class="fa fa-angle-right"></i> Портфолио</a></li>
+<li><a href=""><i class="fa fa-angle-right"></i> Медиа</a></li>
+<li><a href=""><i class="fa fa-angle-right"></i> Партнеры</a></li>
+<li><a href=""><i class="fa fa-angle-right"></i> Контакты</a></li>
+<li><a href=""><i class="fa fa-angle-right"></i> Карта сайта</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<style>
+body {font-family: Arial;  font-size: 15px;  line-height: 22px;  background: #999; margin:0px;}
+.gamburger1 {position: fixed;    z-index: 9999;    top: 0px;    right: 0px;}
+.gamburger1 i.gamburger3 {    color: #fff;    width: 43px;    height: 39px;    text-align: center;    font-size: 34px;        background: #1c4482;    padding-top: 4px;    cursor: pointer;    }
+.gamburger1 i.gamburger3:hover {    background: #fff;    color: #1c4482;   }
+.gamburger2 {overflow: hidden;}
+.gamburger3 {float: left;}
+.gamburger4 {float: left;    margin-right: -1000px;    visibility: hidden;    transition: all 0.3s ease;    -webkit-transition: all 0.3s ease;    background: #fff;    padding: 15px 25px;}
+.gamburger5 {list-style-type: none;    margin: 0px;    padding: 0px;}
+.gamburger5 li {margin-bottom: 5px;}
+.gamburger5 li a {font-size: 17px;    color: #dc0056;    text-decoration: none;}
+.gamburger5 li a:hover {color: #222;}
+</style>
